@@ -44,7 +44,7 @@ code {
   grid-area: n;
 }
 .about img {
-  width: 70%;
+  width: 50%;
   grid-area: img;
   border: 3px solid black;
   margin: 10px;
