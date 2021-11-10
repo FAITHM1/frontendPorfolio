@@ -109,3 +109,8 @@ button:hover,
 nav div:hover {
   color: rgb(156, 156, 156);
 }
+@media (min-width: 300px) and (max-width: 650px) {
+  .project img {
+    width: 80%;
+  }
+}
