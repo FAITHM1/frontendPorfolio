@@ -67,8 +67,9 @@ code {
 .footer {
   position: fixed;
   bottom: 0;
-  margin-top: 50px;
+
   width: 95%;
+  background-color: rgb(180, 171, 158);
 }
 .footer h3 {
   text-align: center;
@@ -84,7 +85,8 @@ code {
 
 .project {
   width: 90%;
-  margin: 20px auto;
+  margin: 30px auto;
+  padding: 20px;
 }
 .project img {
   width: 50%;
