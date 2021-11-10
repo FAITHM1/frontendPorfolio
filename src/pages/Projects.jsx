@@ -13,8 +13,8 @@ function Project(props) {
   };
   useEffect(() => getProjectData(), []);
   const loaded = () => {
-    return projects.map((project) => (
-      <div className="project">
+    return projects.map((project, index) => (
+      <div className="project" key={index}>
         <img src={project.image} />
         <h1>{project.name}</h1>
         <div className="btn">
