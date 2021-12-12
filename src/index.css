@@ -47,7 +47,7 @@ code {
   height: 13vh;
   margin: 0 auto;
   width: 97%;
-border-top: 6px solid rgb(236, 151, 54);
+  border-top: 6px solid rgb(236, 151, 54);
   padding: 10px 0;
   background-color: rgb(192, 108, 133);
 }
@@ -127,6 +127,11 @@ button:hover {
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
+  font-weight: 600;
+  color: rgb(192, 108, 133);
+}
+.showMenu a {
+  text-decoration: none;
 }
 .home img {
   border-radius: 360px;
@@ -215,7 +220,7 @@ li h4 {
   transform: scale(1.5);
   padding: 5px;
   border-radius: 260px;
-  color:white;
+  color: white;
 }
 .about {
   margin: 10px;
