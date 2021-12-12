@@ -11,7 +11,7 @@ function Home(props) {
       <section className="introduction">
         <p>
           Hi, I'm Faith. I'm a software engineer based in Chicago. I'm
-          passionate about technology and growing my skill.
+          passionate about technology and growing my skills.
         </p>
       </section>
       <section className="tech">
