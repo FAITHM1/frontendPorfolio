@@ -6,7 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+span {
+  margin: 4px;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(148, 78, 99);
+}
+.fa-bars {
+  color: rgb(192, 108, 133);
+  /* margin: 10px; */
 
+  width: 50px;
+  height: 2vh;
+  transform: scale(1.5);
+}
+small {
+  margin-right: 20px;
+  margin-top: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -17,60 +34,27 @@ code {
 .App {
   margin: 10px;
 }
-.about {
-  margin: 10px;
-  display: grid;
-  grid-template-areas:
-    "img img img e "
-    "img img img n"
-    "p p p p";
-}
+
 .section {
   background-color: rgb(180, 171, 158);
   height: 100%;
   margin: 10px;
 }
-.about div {
-  grid-area: n;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 20px;
-  height: 50%;
-}
-.about h2 {
-  text-align: center;
-  grid-area: n;
-}
-.about img {
-  width: 50%;
-  grid-area: img;
-  border: 3px solid black;
-  margin: 10px;
-  border-radius: 3%;
-}
-.about h3 {
-  grid-area: e;
-  text-align: center;
-}
-.about p {
-  grid-area: p;
-  border: 4px solid rgb(206, 201, 203);
-  padding: 10px;
-  line-height: 20px;
-  border-radius: 10px;
-  width: 95%;
-  margin: 10px auto;
-  height: 100%;
-}
 .footer {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
 
-  width: 95%;
-  background-color: rgb(180, 171, 158);
+  height: 13vh;
+  margin: 0 auto;
+  width: 97%;
+border-top: 6px solid rgb(236, 151, 54);
+  padding: 10px 0;
+  background-color: rgb(192, 108, 133);
 }
+.footer span {
+  color: white;
+}
+
 .footer h3 {
   text-align: center;
 }
@@ -90,10 +74,15 @@ code {
 }
 .project img {
   width: 50%;
-  border: 3px solid rgb(180, 171, 158);
-  grid-area: i;
+
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
+}
+.project p {
+  text-align: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 600;
 }
 .project h1 {
   text-align: center;
@@ -105,14 +94,202 @@ code {
 button {
   margin: 10px;
   text-align: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(192, 108, 133);
 }
+nav p i:hover,
+a:hover,
 button:hover,
-.footer a:hover,
+.footer ul li a i:hover,
 nav div:hover {
   color: rgb(156, 156, 156);
+  cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+button:hover {
+  background-color: rgb(100, 56, 69);
+}
+
+.menu {
+  display: none;
+}
+.showMenu {
+  display: block;
+  width: 25%;
+  position: absolute;
+  right: 0;
+
+  background-color: white;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.home img {
+  border-radius: 360px;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+
+.about {
+  text-align: center;
+  width: 10%;
+  margin: 20px auto;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.introduction {
+  background-color: rgb(192, 108, 133);
+  color: white;
+  height: 10vh;
+  padding: 10px;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 20px;
+}
+.introduction p {
+  font-weight: 600;
+  text-align: center;
+}
+.line {
+  outline: 2px solid rgb(236, 151, 54);
+  width: 50%;
+  opacity: 60%;
+
+  margin: 2px auto;
+}
+.tech div {
+  width: 100%;
+  background-color: rgb(192, 108, 133);
+}
+
+.tech div ul {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  text-align: center;
+}
+.tech div ul li {
+  width: 40%;
+  margin: 10px;
+  list-style: none;
+  text-align: center;
+}
+.tech div h2 {
+  color: white;
+  transform: scale(2);
+  margin-bottom: 10px;
+}
+.tech div .line {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.fab,
+li .fas {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  transform: scale(3);
+  color: white;
+}
+li h4 {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+}
+.tech {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer i {
+  border: 2px solid white;
+  transform: scale(1.5);
+  padding: 5px;
+  border-radius: 260px;
+  color:white;
+}
+.about {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /* grid-template-areas:
+    "e e e img "
+    "n n n img"
+    "p p p img"; */
+  width: 90%;
+  margin: 20px auto;
+  /* border: 2px solid red; */
+}
+.about div {
+  width: 70%;
+  /* border: 2px solid red; */
+}
+.about {
+  text-align: center;
+  font-weight: 900;
+}
+.about div {
+  grid-area: n;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  height: 50%;
+}
+.about h2 {
+  text-align: center;
+  grid-area: n;
+}
+.about img {
+  width: 40%;
+  height: auto;
+  /* border: 3px solid rgb(192, 108, 133); */
+  margin: 20px;
+}
+.about h3 {
+  text-align: center;
+}
+.about p {
+  grid-area: p;
+  border: 4px solid rgb(192, 108, 133);
+  padding: 10px;
+  line-height: 20px;
+  /* border-radius: 10px; */
+  /* width: 100%; */
+  margin: 0 auto;
+  color: white;
+  /* height: 50vh; */
+  background-color: rgb(192, 108, 133);
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
   .project img {
     width: 80%;
+  }
+  .introduction {
+    height: 20vh;
+  }
+  .about {
+    flex-direction: column;
+    margin-top: -2px;
+  }
+  .about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about div {
+    margin: auto;
   }
 }

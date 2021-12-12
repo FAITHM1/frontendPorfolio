@@ -16,7 +16,9 @@ function Project(props) {
     return projects.map((project, index) => (
       <div className="project" key={index}>
         <img src={project.image} />
+        
         <h1>{project.name}</h1>
+        <p>{project.about}</p>
         <div className="btn">
           <a href={project.git}>
             <button>GitHub</button>
@@ -24,6 +26,7 @@ function Project(props) {
           <a href={project.live}>
             <button>live site</button>
           </a>
+         
         </div>
       </div>
     ));
