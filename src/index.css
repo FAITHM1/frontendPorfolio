@@ -43,9 +43,8 @@ code {
 
 .footer {
   position: absolute;
-
-  height: 13vh;
-  margin: 0 auto;
+ height: 13vh;
+  /* margin: 0 auto; */
   width: 97%;
   border-top: 6px solid rgb(236, 151, 54);
   padding: 10px 0;
@@ -183,6 +182,7 @@ button:hover {
 .tech div ul li {
   width: 40%;
   margin: 10px;
+  margin-left: 0;
   list-style: none;
   text-align: center;
 }
@@ -296,5 +296,8 @@ li h4 {
   }
   .about div {
     margin: auto;
+  }
+  .footer{
+    width: 95%;
   }
 }
